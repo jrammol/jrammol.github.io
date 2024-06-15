@@ -1,209 +1,312 @@
-<!DOCTYPE HTML>
 <!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Hyperspace by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+ API Documentation HTML Template  - 1.0.1
+ Copyright © 2016 Florian Nicolas
+ Licensed under the MIT license.
+ https://github.com/ticlekiwi/API-Documentation-HTML-Template
+ !-->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who we are</a></li>
-							<li><a href="#two">What we do</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+<head>
+    <meta charset="utf-8">
+    <title>Documentación iPortfolio</title>
+    <meta name="description" content="">
+    <meta name="author" content="ticlekiwi">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Hyperspace</h1>
-							<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+    <link rel="stylesheet" href="css/hightlightjs-dark.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&family=Source+Code+Pro:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+</head>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+<body class="one-content-column-version">
+    <div class="left-menu">
+        <div class="content-logo">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;">
+					<img alt="platform by Emily van den Heever from the Noun Project"
+						title="platform by Emily van den Heever from the Noun Project" src="images/minilogo.jpg" height="32" /></a>
+            </div>
+            <button class="burger-menu-icon" id="button-menu-mobile">
+                <svg width="34" height="34" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058">
+                    </path>
+                    <path class="line line2" d="M 20,50 H 80"></path>
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu-closer"></div>
+        <div class="content-menu">
+            <div class="content-infos">
+                <div class="info"><b>Version:</b> 1.0.0</div>
+                <div class="info"><b>Last Updated:</b> 15 Junio, 2024</div>
+            </div>
+            <ul>
+                <li class="scroll-to-link active" data-target="inicio">
+                    <a>Inicio</a>
+                </li>
+                <li class="scroll-to-link" data-target="empaquetadoapp">
+                    <a>Registro Aplicación</a>
+                </li>
+                <li class="scroll-to-link" data-target="ejecucion_app">
+                    <a>Recuperar Contraseña</a>
+                </li>
+                <li class="scroll-to-link" data-target="manual_uso">
+                    <a>Login</a>
+                </li>
+                <li class="scroll-to-link" data-target="manual_codigo">
+                    <a>Buscar Acciones</a>
+                </li>
+				<li class="scroll-to-link" data-target="manual_codigo">
+                    <a>Lista de seguimiento</a>
+                </li>
+				<li class="scroll-to-link" data-target="manual_codigo">
+                    <a>Creación cartera</a>
+                </li>
+				<li class="scroll-to-link" data-target="manual_codigo">
+                    <a>Añadir posiciones a la cartera</a>
+                </li>
+				<li class="scroll-to-link" data-target="manual_codigo">
+                    <a>Cerrar posiciones en la cartera</a>
+                </li>
+				<li class="scroll-to-link" data-target="manual_codigo">
+                    <a>Generar informes PDF</a>
+                </li>
+				<li class="scroll-to-link" data-target="manual_codigo">
+                    <a>Actualizar datos personales</a>
+                </li>
+				<li class="scroll-to-link" data-target="manual_codigo">
+                    <a>Eliminar cuenta usuario</a>
+                </li>
+				<li class="scroll-to-link" data-target="manual_codigo">
+                    <a>Términos y condiciones</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+    <div class="content-page">
+        <div class="content">
+            <div class="overflow-hidden content-section" id="inicio">
+                <h1><a href="index.html">Inicio</a></h1>
+                <p>
+                    ¡Bienvenido al Manual de Usuario de iPortfolio!
 
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					Este manual está diseñado para guiarte a través de todas las funcionalidades de iPortfolio,
+					una aplicación móvil desarrollada para ayudarte a gestionar tus carteras de valores de 
+					manera eficiente y efectiva. En este documento encontrarás instrucciones detalladas sobre cómo registrarte, 
+					iniciar sesión, gestionar tus inversiones, y aprovechar al máximo todas las herramientas y funcionalidades que ofrece la aplicación.
+                </p>
+                <h3>Objetivo del Manual</h3>
+				<p>El objetivo de este manual es proporcionar una guía completa y fácil de seguir para que puedas utilizar iPortfolio con confianza. 
+					Ya seas un inversor principiante o experimentado, este manual te ayudará a familiarizarte con todas las características de la aplicación, 
+					desde la creación de tu cuenta hasta la gestión avanzada de tus carteras de valores.</p>
+				<h3>Contenidos del Manual</h3>
+				<p>El manual está estructurado en secciones que cubren los principales casos de uso de la aplicación. A continuación, se presenta una breve descripción de cada sección:
+					<ul>
+						<li><strong>Registro Aplicación:</strong> Aprende cómo crear una cuenta en iPortfolio y comenzar a utilizar la aplicación.</li>
+						<li><strong>Recuperar Contraseña:</strong> Descubre cómo recuperar tu contraseña en caso de que la olvides.</li>
+						<li><strong>Login:</strong> Instrucciones para iniciar sesión en la aplicación.</li>
+						<li><strong>Buscar Acciones:</strong> Pasos para buscar acciones en la aplicación.</li>
+						<li><strong>Lista de seguimiento:</strong> Aprende a crear y gestionar una lista de seguimiento de acciones.</li>
+						<li><strong>Creación cartera:</strong> Instrucciones detalladas para crear nuevas carteras de valores.</li>
+						<li><strong>Añadir posiciones a la cartera:</strong> Pasos para añadir nuevas posiciones a tus carteras.</li>
+						<li><strong>Cerrar posiciones en la cartera:</strong> Cómo cerrar posiciones en tus carteras.</li>
+						<li><strong>Generar informes PDF:</strong> Genera y envía informes en PDF sobre el estado de tus carteras.</li>
+						<li><strong>Actualizar datos personales:</strong> Personaliza y actualiza tus datos personales en la aplicación.</li>
+						<li><strong>Eliminar cuenta usuario:</strong> Instrucciones para eliminar tu cuenta de usuario de la aplicación.</li>
+						<li><strong>Términos y condiciones:</strong> Consulta los términos y condiciones de uso de la aplicación.</li>
 					</ul>
-				</div>
-			</footer>
+				</p>
+            </div>
+            <div class="overflow-hidden content-section">
+				<h1><a>Registro en la aplicación</a></h1>
+				<p>
+					El registro de usuario permite a un nuevo usuario crear una cuenta en la aplicación iPortfolio proporcionando sus datos personales y de contacto.
+				</p>
+				
+				<h2>Paso a Paso para Registrar un Nuevo Usuario</h2>
+				
+				<h3>1. Abrir la Aplicación</h3>
+				<p>
+					Inicia la aplicación iPortfolio desde tu dispositivo Android.
+				</p>
+				
+				<h3>2. Navegar a la Pantalla de Registro</h3>
+				<p>
+					En la pantalla de inicio, selecciona la opción "Registro" para acceder al formulario de registro.
+				</p>
+				
+				<h3>3. Completar el Formulario de Registro</h3>
+				<p>
+					Introduce tus datos en los campos correspondientes:
+					<ul>
+						<li><strong>Nombre:</strong> Introduce tu nombre completo.</li>
+						<li><strong>Apellido:</strong> Introduce tu apellido.</li>
+						<li><strong>Teléfono:</strong> Introduce tu número de teléfono (debe tener 9 dígitos).</li>
+						<li><strong>Correo Electrónico:</strong> Introduce una dirección de correo electrónico válida.</li>
+						<li><strong>Nombre de Usuario:</strong> Introduce un nombre de usuario.</li>
+						<li><strong>Contraseña:</strong> Introduce una contraseña segura.</li>
+						<li><strong>Confirmar Contraseña:</strong> Introduce nuevamente la contraseña para confirmarla.</li>
+					</ul>
+				</p>
+				
+				<h3>4. Validar los Datos Ingresados</h3>
+				<p>
+					Asegúrate de que todos los campos estén completos y correctamente llenados:
+					<ul>
+						<li>Verifica que el correo electrónico tenga un formato válido.</li>
+						<li>Asegúrate de que el número de teléfono tenga exactamente 9 dígitos.</li>
+						<li>Asegúrate de que las contraseñas coincidan.</li>
+					</ul>
+				</p>
+				
+				<h3>5. Enviar el Formulario</h3>
+				<p>
+					Pulsa el botón "Registrar" para enviar tus datos y crear tu cuenta. Si algún campo no es válido, la aplicación mostrará un mensaje de error indicando el problema específico.
+				</p>
+				
+				<h3>6. Confirmación de Registro</h3>
+				<p>
+					Si los datos son válidos y el registro es exitoso, recibirás una notificación en pantalla confirmando que la cuenta ha sido creada correctamente. Serás redirigido automáticamente a la pantalla de inicio de sesión para acceder a la aplicación con tu nueva cuenta.
+				</p>
+				
+				<h2>Solución de Problemas Comunes durante el Registro</h2>
+				
+				<h3>Correo electrónico inválido</h3>
+				<p>
+					Asegúrate de introducir una dirección de correo electrónico válida. La aplicación verifica que el formato del correo electrónico sea correcto.
+				</p>
+				
+				<h3>Número de teléfono inválido</h3>
+				<p>
+					Asegúrate de que el número de teléfono tenga 9 dígitos.
+				</p>
+				
+				<h3>Contraseñas no coinciden</h3>
+				<p>
+					Asegúrate de que la contraseña y la confirmación de la contraseña sean idénticas.
+				</p>
+				
+				<h3>Campos vacíos</h3>
+				<p>
+					Todos los campos del formulario deben ser completados. Si algún campo está vacío, la aplicación mostrará un mensaje de error solicitando que se complete.
+				</p>
+			</div>
+			
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            <div class="overflow-hidden content-section" id="ejecucion_app">
+                <h1><a href="ejecucion.html">Ejecución de la aplicación</a></h1>
+                <p>
+                    La correcta ejecución de la aplicación multiplataforma requiere el cumplimiento de ciertos requisitos previos, así como la instalación y configuración adecuada de los componentes esenciales. 
+                    
+                </p>
+                <p>
+                    Para obtener información detallada sobre la instalación y configuración de la aplicación y su ejecución, consulte la documentación en el siguiente <a href="ejecucion.html">enlace</a>.
+                </p>
 
-	</body>
+            </div>
+            <div class="overflow-hidden content-section" id="manual_uso">
+                <h2><a href="manual_uso.html">Manual de Uso</a></h2>
+                <p>
+                    Bienvenido al Manual de Uso de nuestra plataforma de tienda de ropa. Este documento, de carácter esencial y profesional, se presenta como una guía detallada 
+                    para los usuarios que buscan aprovechar al máximo las funcionalidades de nuestra aplicación. Aquí encontrarás instrucciones precisas y 
+                    claras sobre cómo explorar nuestro catálogo, realizar transacciones seguras y personalizar tu experiencia de compra. 
+                    Este manual refleja nuestro compromiso con una interacción seria, fluida y confiable, garantizando que tu experiencia en nuestra 
+                    plataforma sea satisfactoria y sin contratiempos.
+                    
+                </p>
+                <p>
+                    Para visualizar este manual y realizar la revisión del mismo puedes hacer clic <a href="manual_uso.html">aquí</a>.
+                </p>
+            </div>
+            <div class="overflow-hidden content-section" id="manual_codigo">
+                <h1><a href="manual_codigo.html">Manual del Código</a></h1>
+                <p>
+                    En este apartado, exploraremos el núcleo técnico de nuestro proyecto de tienda: el Manual de Código. Este documento representa la brújula 
+                    que guía a nuestros desarrolladores a través de las complejidades de la arquitectura y la implementación. Aquí, se establecen las directrices,
+                    estándares y patrones de codificación que definen la base de nuestro sistema. Sumérgete en estas páginas para comprender la esencia de nuestro 
+                    enfoque disciplinado y serio hacia el desarrollo, donde cada línea de código refleja nuestro compromiso con la excelencia técnica en el mundo de la moda digital.
+                </p>
+                <p>
+                    Puedes encontrar el manual del código <a href="manual_codigo.html">aquí</a>.
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <a href="https://github.com/jrammol/jrammol.github.io" class="github-corner"
+        aria-label="View source on Github" title="View source on Github"><svg width="80" height="80"
+            viewBox="0 0 250 250"
+            style="z-index:99999; fill:#70B7FD; color:#fff; position: fixed; top: 0; border: 0; right: 0;"
+            aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg></a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+
+        @keyframes octocat-wave {
+
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+
+        @media only screen and (max-width:680px) {
+            .github-corner>svg {
+                right: auto !important;
+                left: 0 !important;
+                transform: rotate(270deg) !important;
+            }
+        }
+    </style>
+    <!-- END Github Corner Ribbon - to remove -->
+    <script src="js/script.js"></script>
+</body>
+
 </html>
