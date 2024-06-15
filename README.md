@@ -1,42 +1,32 @@
 
-# PUREFORMA - Especificaciones del Proyecto
+# iPortfolio - Especificaciones del Proyecto
 
 ## Descripción del Proyecto
 
-PUREFORMA es una aplicación Java diseñada para uso de clientes de una tienda de ropa. Esta aplicación nos permitirá realizar acciones comunes de cualquier aplicación y a su vez acciones comunes de una tienda.
+iPortfolio es una aplicación diseñada para la gestión de carteras de inversión. Esta aplicación permite a los usuarios realizar acciones comunes en la gestión de inversiones y proporciona una experiencia intuitiva y eficiente para el seguimiento y análisis de sus carteras.
 
 - Registro de usuarios.
 - Inicio de sesión de usuarios.
 - Acceder con distintos tipos de ROL al aplicativo (Admin o User).
-- Listar articulos de ropa.
-- Añadir productos al carrito.
-- Emular compras de los productos del carrito.
+- Buscar y añadir acciones a la cartera.
+- Gestionar carteras de inversión (crear, actualizar y eliminar).
+- Generar informes en PDF sobre el estado de la cartera.
+- Ver noticias financieras relevantes.
 
 ## Objetivo
 
 El **Objetivo principal**
-Desarrollar una aplicación multiplataforma para la tienda de ropa "PUREFORMA" con el propósito de mejorar la experiencia de compra de los clientes y optimizar la gestión interna del inventario.
+Desarrollar una aplicación multiplataforma para la gestión de carteras de inversión "iPortfolio" con el propósito de mejorar la experiencia de gestión de inversiones de los usuarios y optimizar el seguimiento de sus portafolios.
 
-La aplicación **busca proporcionar** a los clientes una experiencia de compra intuitiva y personalizada, facilitar la compra en línea con un carrito eficiente y un proceso de pago seguro, optimizar la gestión del inventario en tiempo real, fidelizar a los clientes a través de programas de lealtad, y recopilar datos para análisis continuo que permita mejorar la oferta y servicios de la tienda. El objetivo global es aumentar las ventas, la satisfacción del cliente y la eficiencia operativa de la tienda de ropa.
+La aplicación **busca proporcionar** a los usuarios una experiencia de gestión de inversiones intuitiva y personalizada, facilitar el seguimiento en tiempo real de las inversiones, optimizar la gestión de carteras, fidelizar a los usuarios a través de características avanzadas de análisis y reporte, y recopilar datos para análisis continuo que permita mejorar la oferta y servicios de la aplicación. El objetivo global es aumentar la satisfacción del usuario y la eficiencia en la gestión de sus inversiones.
 
 ## Tecnologías Utilizadas
 
-Para poder llevar a cabo la creación de la aplicación haremos uso de varias tecnologías con el fin de poder brindar una experiencia lo más eficiente, fácil y personalizada a los clientes. Para ello usaremos las siguientes tecnologías:
+Para poder llevar a cabo la creación de la aplicación haremos uso de varias tecnologías con el fin de poder brindar una experiencia lo más eficiente, fácil y personalizada a los usuarios. Para ello usaremos las siguientes tecnologías:
 
 - **Java (Backend)**. Usaremos este lenguaje para el backend de la aplicación en sí.
-- **Java Swing (Frontend)**. Usaremos la librería Java Swing y AWT para la creación de interfaces de usuario de la tienda.
-- **Maven**. Usaremos la herramienta de gestión de proyectos en Java que simplificará el proceso de construcción, gestión y mantenimiento de proyectos de software.
-- **PostgreSQL (Base de Datos)**. Para un desarrollo cómodo y sin problemas usaremos esta BBDD desplegada en un servidor remoto, el cual albergará la BBDD de forma gratuita durante su desarrollo.
-- **PHP, HTML, CSS, Boostrap (Documentación Web)**. Usaremos estas tecnologías para poder realizar la documentación de ayuda y uso de la aplicación a los usuarios.
+- **Android (Frontend)**. Usaremos el framework de Android para la creación de interfaces de usuario de la aplicación.
+- **Retrofit**. Para manejar las solicitudes HTTP y comunicarse con las APIs.
+- **PostgreSQL (Base de Datos Remota)**. Para un desarrollo cómodo y sin problemas usaremos esta BBDD desplegada en un servidor remoto.
 
-## Estructura del Proyecto
 
-Pediente de esquematizar estructura.
-
-## Autores
-
-- Alejandro Naranjo López
-- David Mata Martínez
-- Jesús Morilla Ibáñez
-- José Antonio Ramos Molina
-- Rafael Ramírez Medina
