@@ -60,40 +60,42 @@
                 <li class="scroll-to-link active" data-target="inicio">
                     <a>Inicio</a>
                 </li>
-                <li class="scroll-to-link" data-target="empaquetadoapp">
+                <li class="scroll-to-link" data-target="registro_usurio">
                     <a>Registro Aplicación</a>
                 </li>
-                <li class="scroll-to-link" data-target="ejecucion_app">
+                <li class="scroll-to-link" data-target="recuperar_password">
                     <a>Recuperar Contraseña</a>
                 </li>
-                <li class="scroll-to-link" data-target="manual_uso">
+                <li class="scroll-to-link" data-target="login">
                     <a>Login</a>
                 </li>
-                <li class="scroll-to-link" data-target="manual_codigo">
+                <li class="scroll-to-link" data-target="buscar_acciones">
                     <a>Buscar Acciones</a>
                 </li>
-				<li class="scroll-to-link" data-target="manual_codigo">
+				<li class="scroll-to-link" data-target="lista_seguimiento">
                     <a>Lista de seguimiento</a>
                 </li>
-				<li class="scroll-to-link" data-target="manual_codigo">
+				<li class="scroll-to-link" data-target="creacion_cartera">
                     <a>Creación cartera</a>
                 </li>
-				<li class="scroll-to-link" data-target="manual_codigo">
-                    <a>Añadir posiciones a la cartera</a>
+				<li class="scroll-to-link" data-target="gestion_carteras">
+                    <a>Gestión de carteras</a>
                 </li>
-				<li class="scroll-to-link" data-target="manual_codigo">
-                    <a>Cerrar posiciones en la cartera</a>
+				<li class="scroll-to-link" data-target="gestion_posiciones">
+                    <a>Gestión de posiciones de la cartera</a>
                 </li>
-				<li class="scroll-to-link" data-target="manual_codigo">
+				<li class="scroll-to-link" data-target="visualizacion_info_cartera">
+                    <a>Visualización de información de la cartera</a>
+                </li>
+				<li class="scroll-to-link" data-target="generar_pdf">
                     <a>Generar informes PDF</a>
-                </li>
-				<li class="scroll-to-link" data-target="manual_codigo">
+				<li class="scroll-to-link" data-target="modificar_datos_personales">
                     <a>Actualizar datos personales</a>
                 </li>
-				<li class="scroll-to-link" data-target="manual_codigo">
+				<li class="scroll-to-link" data-target="eliminar_cuenta">
                     <a>Eliminar cuenta usuario</a>
                 </li>
-				<li class="scroll-to-link" data-target="manual_codigo">
+				<li class="scroll-to-link" data-target="terminos_condiciones">
                     <a>Términos y condiciones</a>
                 </li>
             </ul>
@@ -135,7 +137,7 @@
 					</ul>
 				</p>
             </div>
-            <div class="overflow-hidden content-section">
+            <div class="overflow-hidden content-section" id="registro_usurio">
 				<h1><a>Registro en la aplicación</a></h1>
 				<p>
 					El registro de usuario permite a un nuevo usuario crear una cuenta en la aplicación iPortfolio proporcionando sus datos personales y de contacto.
@@ -211,44 +213,593 @@
 			</div>
 			
 
-            <div class="overflow-hidden content-section" id="ejecucion_app">
-                <h1><a href="ejecucion.html">Ejecución de la aplicación</a></h1>
-                <p>
-                    La correcta ejecución de la aplicación multiplataforma requiere el cumplimiento de ciertos requisitos previos, así como la instalación y configuración adecuada de los componentes esenciales. 
-                    
-                </p>
-                <p>
-                    Para obtener información detallada sobre la instalación y configuración de la aplicación y su ejecución, consulte la documentación en el siguiente <a href="ejecucion.html">enlace</a>.
-                </p>
+            <div class="overflow-hidden content-section" id="recuperar_password">
+                <div class="overflow-hidden content-section">
+					<h1><a>Recuperar Contraseña</a></h1>
+					<p>
+						La funcionalidad de recuperación de contraseña permite a un usuario registrado restablecer su contraseña en caso de que la haya olvidado. El usuario deberá proporcionar su dirección de correo electrónico asociada a su cuenta y recibirá un correo electrónico con una nueva contraseña.
+					</p>
+					
+					<h2>Paso a Paso para Recuperar la Contraseña</h2>
+					
+					<h3>1. Abrir la Aplicación</h3>
+					<p>
+						Inicia la aplicación iPortfolio desde tu dispositivo Android.
+					</p>
+					
+					<h3>2. Navegar a la Pantalla de Recuperación de Contraseña</h3>
+					<p>
+						En la pantalla de inicio de sesión, selecciona la opción "¿Olvidaste tu contraseña?" para acceder a la pantalla de recuperación de contraseña.
+					</p>
+					
+					<h3>3. Introducir Dirección de Correo Electrónico</h3>
+					<p>
+						Introduce tu dirección de correo electrónico en el campo correspondiente.
+					</p>
+					
+					<h3>4. Enviar Solicitud de Recuperación</h3>
+					<p>
+						Pulsa el botón "Reset Password" para enviar la solicitud de recuperación de contraseña.
+					</p>
+					
+					<h3>5. Confirmación de Recuperación</h3>
+					<p>
+						Si la dirección de correo electrónico es válida y está registrada en el sistema, recibirás un correo electrónico con una nueva contraseña. Aparecerá un mensaje en la pantalla confirmando que la nueva contraseña ha sido enviada a tu correo electrónico. Si la dirección de correo electrónico no está registrada, aparecerá un mensaje de error indicando que el correo no ha sido encontrado.
+					</p>
+					
+					<h2>Solución de Problemas Comunes durante la Recuperación</h2>
+					
+					<h3>Correo electrónico no registrado</h3>
+					<p>
+						Asegúrate de introducir la dirección de correo electrónico asociada a tu cuenta en iPortfolio. Si el correo no está registrado, no podrás recuperar tu contraseña.
+					</p>
+					
+					<h3>No recibes el correo electrónico</h3>
+					<p>
+						Verifica tu carpeta de spam o correo no deseado. Asegúrate de que tu dirección de correo electrónico esté correctamente escrita. Si el problema persiste, intenta nuevamente o contacta al soporte técnico de iPortfolio.
+					</p>
+				</div>
 
             </div>
-            <div class="overflow-hidden content-section" id="manual_uso">
-                <h2><a href="manual_uso.html">Manual de Uso</a></h2>
-                <p>
-                    Bienvenido al Manual de Uso de nuestra plataforma de tienda de ropa. Este documento, de carácter esencial y profesional, se presenta como una guía detallada 
-                    para los usuarios que buscan aprovechar al máximo las funcionalidades de nuestra aplicación. Aquí encontrarás instrucciones precisas y 
-                    claras sobre cómo explorar nuestro catálogo, realizar transacciones seguras y personalizar tu experiencia de compra. 
-                    Este manual refleja nuestro compromiso con una interacción seria, fluida y confiable, garantizando que tu experiencia en nuestra 
-                    plataforma sea satisfactoria y sin contratiempos.
-                    
-                </p>
-                <p>
-                    Para visualizar este manual y realizar la revisión del mismo puedes hacer clic <a href="manual_uso.html">aquí</a>.
-                </p>
-            </div>
-            <div class="overflow-hidden content-section" id="manual_codigo">
-                <h1><a href="manual_codigo.html">Manual del Código</a></h1>
-                <p>
-                    En este apartado, exploraremos el núcleo técnico de nuestro proyecto de tienda: el Manual de Código. Este documento representa la brújula 
-                    que guía a nuestros desarrolladores a través de las complejidades de la arquitectura y la implementación. Aquí, se establecen las directrices,
-                    estándares y patrones de codificación que definen la base de nuestro sistema. Sumérgete en estas páginas para comprender la esencia de nuestro 
-                    enfoque disciplinado y serio hacia el desarrollo, donde cada línea de código refleja nuestro compromiso con la excelencia técnica en el mundo de la moda digital.
-                </p>
-                <p>
-                    Puedes encontrar el manual del código <a href="manual_codigo.html">aquí</a>.
-                </p>
+            <div class="overflow-hidden content-section" id="login">
+				<h1><a>Inicio de Sesión en la Aplicación</a></h1>
+				<p>
+					La funcionalidad de inicio de sesión permite a un usuario registrado acceder a la aplicación iPortfolio proporcionando su nombre de usuario y contraseña.
+				</p>
+				
+				<h2>Paso a Paso para Iniciar Sesión</h2>
+				
+				<h3>1. Abrir la Aplicación</h3>
+				<p>
+					Inicia la aplicación iPortfolio desde tu dispositivo Android.
+				</p>
+				
+				<h3>2. Navegar a la Pantalla de Inicio de Sesión</h3>
+				<p>
+					En la pantalla de inicio, selecciona la opción "Login" para acceder al formulario de inicio de sesión.
+				</p>
+				
+				<h3>3. Completar el Formulario de Inicio de Sesión</h3>
+				<p>
+					Introduce tus datos en los campos correspondientes:
+					<ul>
+						<li><strong>Nombre de Usuario:</strong> Introduce tu nombre de usuario.</li>
+						<li><strong>Contraseña:</strong> Introduce tu contraseña.</li>
+					</ul>
+				</p>
+				
+				<h3>4. Enviar el Formulario</h3>
+				<p>
+					Pulsa el botón "Login" para enviar tus datos y acceder a tu cuenta.
+				</p>
+				
+				<h3>5. Confirmación de Inicio de Sesión</h3>
+				<p>
+					Si los datos son válidos y el inicio de sesión es exitoso, recibirás una notificación en pantalla confirmando que has iniciado sesión correctamente. Serás redirigido automáticamente a la pantalla principal de la aplicación.
+				</p>
+				
+				<h3>6. Olvidaste tu Contraseña</h3>
+				<p>
+					Si has olvidado tu contraseña, pulsa en "¿Olvidaste tu contraseña?" y sigue las instrucciones para recuperar tu contraseña.
+				</p>
+				
+				<h3>7. Registro de Nuevo Usuario</h3>
+				<p>
+					Si no tienes una cuenta, pulsa en "¿No tienes una cuenta? Regístrate aquí" para crear una nueva cuenta.
+				</p>
+				
+				<h2>Solución de Problemas Comunes durante el Inicio de Sesión</h2>
+				
+				<h3>Nombre de usuario o contraseña incorrectos</h3>
+				<p>
+					Asegúrate de que el nombre de usuario y la contraseña sean correctos. Si has olvidado tu contraseña, utiliza la opción de recuperación de contraseña.
+				</p>
+				
+				<h3>Cuenta no registrada</h3>
+				<p>
+					Si no tienes una cuenta, regístrate utilizando la opción "¿No tienes una cuenta? Regístrate aquí".
+				</p>
+				
+				<h3>Problemas de conexión</h3>
+				<p>
+					Verifica tu conexión a internet y asegúrate de que la aplicación tenga acceso a la red.
+				</p>
+			</div>
 
-            </div>
+			<div class="overflow-hidden content-section" id="buscar_acciones">
+				<h1><a>Buscar Acciones en la Aplicación</a></h1>
+				<p>
+					La funcionalidad de búsqueda de acciones permite a los usuarios buscar tendencias de acciones específicas dentro de la aplicación iPortfolio. Los usuarios pueden introducir términos de búsqueda y recibir una lista de resultados relevantes.
+				</p>
+				
+				<h2>Paso a Paso para Buscar Acciones</h2>
+				
+				<h3>1. Abrir la Aplicación</h3>
+				<p>
+					Inicia la aplicación iPortfolio desde tu dispositivo Android y navega hasta la pantalla principal.
+				</p>
+				
+				<h3>3. Introducir Término de Búsqueda</h3>
+				<p>
+					Introduce el término de búsqueda en el campo de texto designado. Este puede ser el nombre de una empresa, símbolo de acciones o cualquier otro criterio relevante.
+				</p>
+				
+				<h3>4. Enviar Solicitud de Búsqueda</h3>
+				<p>
+					Pulsa el botón de búsqueda (icono de lupa) para enviar la solicitud de búsqueda.
+				</p>
+				
+				<h3>5. Ver Resultados de Búsqueda</h3>
+				<p>
+					Los resultados de la búsqueda se mostrarán en una lista debajo del campo de búsqueda. Podrás ver detalles como el nombre de la acción, símbolo, y tendencias actuales.
+				</p>
+				
+				<h3>6. Seleccionar un Resultado</h3>
+				<p>
+					Selecciona uno de los resultados para ver más detalles sobre la acción y añadirla a tu cartera si lo deseas.
+				</p>
+				
+				<h2>Solución de Problemas Comunes durante la Búsqueda</h2>
+				
+				<h3>Resultados de búsqueda vacíos</h3>
+				<p>
+					Asegúrate de que has introducido correctamente el término de búsqueda. Intenta con diferentes términos o verifica la conexión a internet.
+				</p>
+				
+				<h3>Error en la búsqueda</h3>
+				<p>
+					Si ocurre un error durante la búsqueda, verifica tu conexión a internet y vuelve a intentarlo. Si el problema persiste, contacta al soporte técnico de iPortfolio.
+				</p>
+			</div>
+
+			<div class="overflow-hidden content-section" id="lista_seguimiento">
+				<h1><a>Lista de Seguimiento en la Aplicación</a></h1>
+				<p>
+					La funcionalidad de lista de seguimiento permite a los usuarios agregar y gestionar acciones específicas para monitorear sus tendencias dentro de la aplicación iPortfolio.
+				</p>
+				
+				<h2>Paso a Paso para Gestionar la Lista de Seguimiento</h2>
+				
+				<h3>1. Abrir la Aplicación</h3>
+				<p>
+					Inicia la aplicación iPortfolio desde tu dispositivo Android y navega hasta la pantalla principal.
+				</p>
+				
+				<h3>2. Navegar a la Pantalla de Lista de Seguimiento</h3>
+				<p>
+					Selecciona la opción "Lista de Seguimiento" en la barra de navegación para acceder a la pantalla de gestión de la lista de seguimiento.
+				</p>
+				
+				<h3>3. Añadir una Acción a la Lista de Seguimiento</h3>
+				<p>
+					Tienes dos opciones para añadir una acción a la lista de seguimiento:
+					<ul>
+						<li><strong>Directamente en la Pantalla de Lista de Seguimiento:</strong> Introduce el ticker de la acción en el campo de texto y pulsa el botón de añadir. Asegúrate de introducir correctamente el ticker.</li>
+						<li><strong>Desde la Vista de Detalles de una Acción:</strong> Busca una acción, navega a la vista de detalles de la acción y pulsa el botón de favorito para añadirla a tu lista de seguimiento.</li>
+					</ul>
+				</p>
+				
+				<h3>4. Ver la Lista de Seguimiento</h3>
+				<p>
+					Los resultados de la lista de seguimiento se mostrarán en una lista debajo del campo de búsqueda en la pantalla de lista de seguimiento. Podrás ver detalles como el nombre de la acción y el símbolo.
+				</p>
+				
+				<h3>5. Eliminar una Acción de la Lista de Seguimiento</h3>
+				<p>
+					Para eliminar una acción de la lista de seguimiento, desliza el elemento correspondiente hacia la derecha. La acción será eliminada de tu lista de seguimiento.
+				</p>
+				
+				<h2>Solución de Problemas Comunes durante la Gestión de la Lista de Seguimiento</h2>
+				
+				<h3>Acción ya en la lista de seguimiento</h3>
+				<p>
+					Si intentas añadir una acción que ya está en tu lista de seguimiento, la aplicación mostrará un mensaje de error indicando que la acción ya está en tu lista de seguimiento.
+				</p>
+				
+				<h3>Error al cargar la lista de seguimiento</h3>
+				<p>
+					Si ocurre un error durante la carga de la lista de seguimiento, verifica tu conexión a internet y vuelve a intentarlo. Si el problema persiste, contacta al soporte técnico de iPortfolio.
+				</p>
+				
+				<h3>Error al añadir o eliminar una acción</h3>
+				<p>
+					Si ocurre un error durante la adición o eliminación de una acción, verifica tu conexión a internet y vuelve a intentarlo. Si el problema persiste, contacta al soporte técnico de iPortfolio.
+				</p>
+			</div>
+
+			<div class="overflow-hidden content-section" id="creacion_cartera">
+				<h1><a>Creación de Cartera</a></h1>
+				<p>
+					La funcionalidad de creación de cartera permite a los usuarios crear una nueva cartera para organizar y gestionar sus inversiones dentro de la aplicación iPortfolio.
+				</p>
+				
+				<h2>Paso a Paso para Crear una Nueva Cartera</h2>
+				
+				<h3>1. Abrir la Aplicación</h3>
+				<p>
+					Inicia la aplicación iPortfolio desde tu dispositivo Android.
+				</p>
+				
+				<h3>2. Navegar a la Pantalla de Carteras</h3>
+				<p>
+					En la pantalla principal, selecciona la opción "Carteras" para acceder a la pantalla de gestión de carteras.
+				</p>
+				
+				<h3>3. Crear una Nueva Cartera</h3>
+				<p>
+					Introduce el nombre de la nueva cartera en el campo de texto proporcionado y pulsa el botón de añadir.
+				</p>
+				
+				<h3>4. Confirmación de Creación de Cartera</h3>
+				<p>
+					Si los datos son válidos y la creación de la cartera es exitosa, recibirás una notificación en pantalla confirmando que la cartera ha sido creada correctamente.
+				</p>
+				
+				<h2>Solución de Problemas Comunes durante la Creación de Carteras</h2>
+				
+				<h3>Error al Crear la Cartera</h3>
+				<p>
+					Si ocurre un error durante la creación de la cartera, verifica tu conexión a internet y vuelve a intentarlo. Si el problema persiste, contacta al soporte técnico de iPortfolio.
+				</p>
+			</div>
+
+			<div class="overflow-hidden content-section" id="gestion_carteras">
+				<h1><a>Gestión de Carteras</a></h1>
+				<p>
+					La gestión de carteras permite a los usuarios ver, actualizar y eliminar sus carteras dentro de la aplicación iPortfolio.
+				</p>
+				
+				<h2>Paso a Paso para Gestionar Carteras</h2>
+				
+				<h3>1. Ver las Carteras</h3>
+				<p>
+					Navega a la pantalla de carteras para ver una lista de todas tus carteras. Los detalles de cada cartera, como el nombre y el valor total, se mostrarán en una lista.
+				</p>
+				
+				<h3>2. Actualizar una Cartera</h3>
+				<p>
+					Para actualizar una cartera, selecciona la cartera que deseas modificar y realiza los cambios necesarios. Pulsa el botón de guardar para confirmar los cambios.
+				</p>
+				
+				<h3>3. Eliminar una Cartera</h3>
+				<p>
+					Para eliminar una cartera, desliza el elemento correspondiente hacia la derecha. La cartera será eliminada de tu lista de carteras.
+				</p>
+				
+				<h2>Solución de Problemas Comunes durante la Gestión de Carteras</h2>
+				
+				<h3>Error al Cargar las Carteras</h3>
+				<p>
+					Si ocurre un error durante la carga de las carteras, verifica tu conexión a internet y vuelve a intentarlo. Si el problema persiste, contacta al soporte técnico de iPortfolio.
+				</p>
+				
+				<h3>Error al Actualizar o Eliminar una Cartera</h3>
+				<p>
+					Si ocurre un error durante la actualización o eliminación de una cartera, verifica tu conexión a internet y vuelve a intentarlo. Si el problema persiste, contacta al soporte técnico de iPortfolio.
+				</p>
+			</div>
+
+			<div class="overflow-hidden content-section" id="gestion_posiciones">
+				<h1><a>Gestión de Posiciones en la Cartera</a></h1>
+				<p>
+					La gestión de posiciones permite a los usuarios ver, añadir y eliminar posiciones dentro de sus carteras en la aplicación iPortfolio.
+				</p>
+				
+				<h2>Paso a Paso para Gestionar Posiciones</h2>
+				
+				<h3>1. Ver las Posiciones</h3>
+				<p>
+					Navega a la pantalla de detalles de la cartera para ver una lista de todas las posiciones abiertas y cerradas en tu cartera.
+				</p>
+				
+				<h3>2. Añadir una Nueva Posición</h3>
+				<p>
+					Para añadir una nueva posición, selecciona la opción de añadir posición en la pantalla de detalles de la cartera, introduce los datos necesarios y confirma la adición.
+				</p>
+				<h3>3. Cerrar una Nueva Posición</h3>
+				<p>
+					Para cerrar una nueva posición, pulsa sobre la posición en concreto en la lista de posiciones abiertas. Esto te llevará a la vista detalles de una posición, introduce introduce el precio de cierra y confirma cerrar la posición.
+				</p>
+				
+				<h3>4. Eliminar una Posición</h3>
+				<p>
+					Para eliminar una posición, desliza el elemento correspondiente hacia la derecha en la lista de posiciones abiertas. La posición será eliminada de tu cartera.
+				</p>
+				
+				<h2>Solución de Problemas Comunes durante la Gestión de Posiciones</h2>
+				
+				<h3>Error al Cargar las Posiciones</h3>
+				<p>
+					Si ocurre un error durante la carga de las posiciones, verifica tu conexión a internet y vuelve a intentarlo. Si el problema persiste, contacta al soporte técnico de iPortfolio.
+				</p>
+				
+				<h3>Error al Añadir o Eliminar una Posición</h3>
+				<p>
+					Si ocurre un error durante la adición o eliminación de una posición, verifica tu conexión a internet y vuelve a intentarlo. Si el problema persiste, contacta al soporte técnico de iPortfolio.
+				</p>
+			</div>
+
+			<div class="overflow-hidden content-section" id="visualizacion_info_cartera">
+				<h1><a>Visualización de Información de la Cartera</a></h1>
+				<p>
+					La visualización de información de la cartera permite a los usuarios ver detalles y gráficos relacionados con sus carteras dentro de la aplicación iPortfolio.
+				</p>
+				
+				<h2>Paso a Paso para Visualizar Información de la Cartera</h2>
+				
+				<h3>1. Navegar a la Pantalla de Información de la Cartera</h3>
+				<p>
+					Selecciona una cartera de tu lista de carteras y navega a la pantalla de información de la cartera para ver detalles y gráficos.
+				</p>
+				
+				<h3>2. Ver Detalles de la Cartera</h3>
+				<p>
+					En la pantalla de información de la cartera, verás un resumen detallado de tu cartera, incluyendo las posiciones abiertas y cerradas.
+				</p>
+				
+				<h3>3. Ver Gráficos de la Cartera</h3>
+				<p>
+					La pantalla de información de la cartera también muestra gráficos que representan la distribución y el rendimiento de las posiciones en tu cartera.
+				</p>
+				
+				<h2>Solución de Problemas Comunes durante la Visualización de Información de la Cartera</h2>
+				
+				<h3>Error al Cargar la Información de la Cartera</h3>
+				<p>
+					Si ocurre un error durante la carga de la información de la cartera, verifica tu conexión a internet y vuelve a intentarlo. Si el problema persiste, contacta al soporte técnico de iPortfolio.
+				</p>
+			</div>
+
+			<div class="overflow-hidden content-section" id="generar_pdf">
+				<h1><a>Generar Informes en PDF</a></h1>
+				<p>
+					La funcionalidad de generación de informes en PDF permite a los usuarios crear un informe detallado de sus carteras y enviarlo a su correo electrónico. Esta funcionalidad es útil para llevar un registro formal de las inversiones.
+				</p>
+				
+				<h2>Paso a Paso para Generar un Informe en PDF</h2>
+				
+				<h3>1. Abrir la Aplicación</h3>
+				<p>
+					Inicia la aplicación iPortfolio desde tu dispositivo Android.
+				</p>
+				
+				<h3>2. Navegar a la Pantalla de Reportes</h3>
+				<p>
+					En el menú lateral, selecciona la opción "Reportes" para acceder a la pantalla de generación de informes en PDF.
+				</p>
+				
+				<h3>3. Seleccionar la Cartera</h3>
+				<p>
+					En la pantalla de reportes, selecciona la cartera para la cual deseas generar el informe. Usa el menú desplegable para elegir entre las carteras disponibles.
+				</p>
+				
+				<h3>4. Introducir el Correo Electrónico</h3>
+				<p>
+					Introduce la dirección de correo electrónico donde deseas recibir el informe en PDF.
+				</p>
+				
+				<h3>5. Generar el Informe</h3>
+				<p>
+					Pulsa el botón "Generar Informe" para crear el informe en PDF y enviarlo a la dirección de correo electrónico proporcionada. Si los datos son válidos, recibirás una notificación en pantalla confirmando que el informe ha sido enviado correctamente.
+				</p>
+				
+				<h2>Solución de Problemas Comunes durante la Generación de Informes</h2>
+				
+				<h3>Correo electrónico inválido</h3>
+				<p>
+					Asegúrate de introducir una dirección de correo electrónico que uso en el registro y que sea válido. La aplicación verifica que el formato del correo electrónico sea correcto.
+				</p>
+				
+				<h3>Fallo en la generación del informe</h3>
+				<p>
+					Si ocurre un error durante la generación del informe, verifica tu conexión a internet y vuelve a intentarlo. Si el problema persiste, contacta al soporte técnico de iPortfolio.
+				</p>
+				
+				<h3>Error al cargar las carteras</h3>
+				<p>
+					Si ocurre un error al cargar las carteras, verifica que estés logueado en la aplicación y que tu conexión a internet esté activa. Si el problema persiste, contacta al soporte técnico de iPortfolio.
+				</p>
+			</div>
+			<div class="overflow-hidden content-section" id="modificar_datos_personales">
+				<h1><a>Modificar Datos Personales</a></h1>
+				<p>
+					La funcionalidad de modificación de datos personales permite a los usuarios actualizar su información de perfil, como nombre, apellido, correo electrónico, nombre de usuario y número de teléfono. También permite cambiar la contraseña.
+				</p>
+				
+				<h2>Paso a Paso para Modificar los Datos Personales</h2>
+				
+				<h3>1. Abrir la Aplicación</h3>
+				<p>
+					Inicia la aplicación iPortfolio desde tu dispositivo Android.
+				</p>
+				
+				<h3>2. Navegar a la Pantalla de Perfil</h3>
+				<p>
+					En la pantalla principal, selecciona la opción "Perfil" del menú lateral para acceder a la pantalla de edición de perfil.
+				</p>
+				
+				<h3>3. Cargar los Datos del Perfil</h3>
+				<p>
+					La aplicación cargará automáticamente los datos del perfil actual del usuario. Asegúrate de estar logueado para que los datos se carguen correctamente.
+				</p>
+				
+				<h3>4. Editar los Datos del Perfil</h3>
+				<p>
+					Modifica los campos que desees actualizar:
+					<ul>
+						<li><strong>Nombre:</strong> Introduce tu nombre completo.</li>
+						<li><strong>Apellido:</strong> Introduce tu apellido.</li>
+						<li><strong>Correo Electrónico:</strong> Introduce una dirección de correo electrónico válida.</li>
+						<li><strong>Nombre de Usuario:</strong> Introduce un nombre de usuario.</li>
+						<li><strong>Teléfono:</strong> Introduce tu número de teléfono.</li>
+					</ul>
+				</p>
+				
+				<h3>5. Cambiar la Contraseña</h3>
+				<p>
+					Si deseas cambiar tu contraseña, completa los siguientes campos:
+					<ul>
+						<li><strong>Contraseña Actual:</strong> Introduce tu contraseña actual.</li>
+						<li><strong>Nueva Contraseña:</strong> Introduce una nueva contraseña segura.</li>
+						<li><strong>Confirmar Nueva Contraseña:</strong> Introduce nuevamente la nueva contraseña para confirmarla.</li>
+					</ul>
+				</p>
+				
+				<h3>6. Guardar los Cambios</h3>
+				<p>
+					Pulsa el botón "Guardar Perfil" para guardar los cambios realizados. Si algún campo no es válido o las contraseñas no coinciden, la aplicación mostrará un mensaje de error indicando el problema específico.
+				</p>
+				
+				<h3>7. Confirmación de Modificación</h3>
+				<p>
+					Si los datos son válidos y la modificación es exitosa, recibirás una notificación en pantalla confirmando que el perfil ha sido actualizado correctamente.
+				</p>
+				
+				<h2>Solución de Problemas Comunes durante la Modificación</h2>
+				
+				<h3>Correo electrónico inválido</h3>
+				<p>
+					Asegúrate de introducir una dirección de correo electrónico válida. La aplicación verifica que el formato del correo electrónico sea correcto.
+				</p>
+				
+				<h3>Contraseña actual incorrecta</h3>
+				<p>
+					Asegúrate de introducir correctamente tu contraseña actual para poder cambiarla por una nueva.
+				</p>
+				
+				<h3>Nuevas contraseñas no coinciden</h3>
+				<p>
+					Asegúrate de que la nueva contraseña y la confirmación de la nueva contraseña sean idénticas.
+				</p>
+				
+				<h3>Campos vacíos</h3>
+				<p>
+					Todos los campos del formulario deben ser completados. Si algún campo está vacío, la aplicación mostrará un mensaje de error solicitando que se complete.
+				</p>
+			</div>
+			
+			<div class="overflow-hidden content-section" id="eliminar_cuenta">
+				<h1><a>Eliminar Cuenta</a></h1>
+				<p>
+					La funcionalidad para eliminar la cuenta permite a los usuarios eliminar su cuenta de iPortfolio de manera permanente. Este proceso requiere la confirmación de la contraseña del usuario.
+				</p>
+			
+				<h2>Paso a Paso para Eliminar la Cuenta</h2>
+			
+				<h3>1. Abrir la Aplicación</h3>
+				<p>
+					Inicia la aplicación iPortfolio desde tu dispositivo Android.
+				</p>
+			
+				<h3>2. Navegar a la Pantalla de Configuración</h3>
+				<p>
+					En la pantalla principal, selecciona la opción "Configuración" para acceder a las opciones de la cuenta.
+				</p>
+			
+				<h3>3. Ingresar Contraseña</h3>
+				<p>
+					Introduce tu contraseña en el campo proporcionado para confirmar tu identidad:
+					<ul>
+						<li><strong>Contraseña:</strong> Introduce tu contraseña actual.</li>
+					</ul>
+				</p>
+			
+				<h3>4. Confirmar la Eliminación de la Cuenta</h3>
+				<p>
+					Pulsa el botón "Eliminar Cuenta" para proceder con la eliminación de tu cuenta. Si la contraseña es incorrecta, la aplicación mostrará un mensaje de error indicando el problema específico.
+				</p>
+			
+				<h3>5. Confirmación de Eliminación</h3>
+				<p>
+					Si la contraseña es válida y la eliminación es exitosa, recibirás una notificación en pantalla confirmando que la cuenta ha sido eliminada correctamente. La aplicación cerrará la sesión automáticamente y te redirigirá a la pantalla de inicio de sesión.
+				</p>
+			
+				<h2>Solución de Problemas Comunes durante la Eliminación de la Cuenta</h2>
+			
+				<h3>Contraseña incorrecta</h3>
+				<p>
+					Asegúrate de introducir correctamente tu contraseña actual. Si la contraseña es incorrecta, no podrás proceder con la eliminación de la cuenta.
+				</p>
+			
+				<h3>Usuario no autenticado</h3>
+				<p>
+					Asegúrate de estar logueado en la aplicación. Si no estás logueado, la aplicación no podrá verificar tu identidad para proceder con la eliminación de la cuenta.
+				</p>
+			</div>
+			
+			
+            <div class="overflow-hidden content-section" id="terminos_condiciones">
+				<h1><a href="#">Términos y Condiciones</a></h1>
+				<h2>Aceptación de los Términos</h2>
+				<p>
+					Al descargar, instalar y utilizar la aplicación iPortfolio, aceptas cumplir con estos Términos y Condiciones de Uso. Si no estás de acuerdo con alguno de estos términos, no debes usar la aplicación.
+				</p>
+				
+				<h2>Uso de la Aplicación</h2>
+				<p>
+					La aplicación iPortfolio está destinada a gestionar y monitorizar tus inversiones. Te comprometes a utilizar la aplicación solo para fines legales y de acuerdo con todas las leyes y regulaciones aplicables.
+				</p>
+				
+				<h2>Registro y Seguridad de la Cuenta</h2>
+				<p>
+					Para utilizar ciertas funciones de la aplicación, es posible que debas registrarte y crear una cuenta. Eres responsable de mantener la confidencialidad de tu información de inicio de sesión y de cualquier actividad que ocurra bajo tu cuenta. Notifica inmediatamente a iPortfolio de cualquier uso no autorizado de tu cuenta.
+				</p>
+				
+				<h2>Privacidad</h2>
+				<p>
+					Tu privacidad es importante para nosotros. Consulta nuestra Política de Privacidad para obtener más información sobre cómo recopilamos, utilizamos y compartimos tu información personal.
+				</p>
+				
+				<h2>Propiedad Intelectual</h2>
+				<p>
+					Todos los derechos de propiedad intelectual relacionados con la aplicación iPortfolio y su contenido (incluyendo pero no limitándose a software, texto, gráficos y logotipos) son propiedad de iPortfolio o sus licenciantes. No puedes copiar, modificar, distribuir, vender o alquilar ninguna parte de nuestros servicios o software.
+				</p>
+				
+				<h2>Limitación de Responsabilidad</h2>
+				<p>
+					iPortfolio no será responsable de ningún daño directo, indirecto, incidental, especial o consecuente que resulte del uso o la imposibilidad de uso de la aplicación, incluso si iPortfolio ha sido advertido de la posibilidad de tales daños.
+				</p>
+				
+				<h2>Modificaciones del Servicio y Términos</h2>
+				<p>
+					Nos reservamos el derecho de modificar o descontinuar la aplicación en cualquier momento, temporal o permanentemente, con o sin previo aviso. También podemos modificar estos Términos y Condiciones en cualquier momento. Es tu responsabilidad revisar estos términos periódicamente para estar al tanto de cualquier cambio.
+				</p>
+				
+				<h2>Terminación</h2>
+				<p>
+					Podemos suspender o terminar tu acceso a la aplicación si violas estos Términos y Condiciones o si determinamos, a nuestra discreción, que tu uso de la aplicación es inapropiado.
+				</p>
+				
+				<h2>Ley Aplicable</h2>
+				<p>
+					Estos Términos y Condiciones se regirán e interpretarán de acuerdo con las leyes del país donde reside el usuario. Cualquier disputa que surja en relación con estos términos será sometida a la jurisdicción exclusiva de los tribunales competentes en dicha jurisdicción.
+				</p>
+				
+				<h2>Contacto</h2>
+				<p>
+					Si tienes alguna pregunta o inquietud sobre estos Términos y Condiciones, puedes contactarnos a través de la sección de soporte en la aplicación o enviando un correo electrónico a soporte@iportfolio.com.
+				</p>
+			</div>
         </div>
     </div>
     <a href="https://github.com/jrammol/jrammol.github.io" class="github-corner"
