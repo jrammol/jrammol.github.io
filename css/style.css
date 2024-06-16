@@ -534,3 +534,24 @@ body.one-content-column-version .content thead {
 .cf:before, .cf:after { content: ""; display: block; }
 .cf:after { clear: both; }
 .ie6 .cf { zoom: 1 }
+
+/* RESPONSIVE VIDEO CONTAINER
+----------------------------------------------------------------------------------------*/
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
